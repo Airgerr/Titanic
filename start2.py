@@ -60,7 +60,7 @@ header = next(test_file_object)
 fare_ceiling = 40
 # then modify the data in the Fare column to = 39, if it is greater or equal to the ceiling
 
-data[ data[0::,9].astype(np.float) >= fare_ceiling, 9 ] = fare_ceiling - 1.0 #equvalent to foreach with a set operation, but so much nicer.
+data[ data[0::,9].astype(np.float) >= fare_ceiling, 9 ] = fare_ceiling - 1.0 #equivalent to foreach with a set operation, but so much nicer.
 
 fare_bracket_size = 10
 number_of_price_brackets = fare_ceiling / fare_bracket_size
