@@ -72,7 +72,7 @@ number_of_classes = len(np.unique(data[0::,2]))   # But it's better practice to 
 # This reference matrix will show the proportion of survivors as a sorted table of
 # gender, class and ticket fare.
 # First initialize it with all zeros
-survival_table = np.zeros([2,number_of_classes,number_of_price_brackets],float)                              
+survival_table = np.zeros([2,number_of_classes,number_of_price_brackets],float) #this actually creates a matrix                             
 
 # I can now find the stats of all the women and men on board
 for i in range(number_of_classes):
